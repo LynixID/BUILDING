@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romusha Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              nunito: ["Nunito"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body * {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body class="font-nunito bg-sky-950 text-sky-100">
+    <nav class="px-6 pt-2 pb-5 flex justify-between border-b-sky-100">
+      <div class="text-2xl font-semibold sm:text-4xl lg:text7xl">
+        <a href="">RNB</a>
+      </div>
+      <div class="relative sm:hidden">
+        <input
+          type="checkbox"
+          class="absolute w-7 h-7 opacity-10 hover:cursor-pointer"
+        />
+        <div class="flex h-7 flex-col justify-between">
+          <span class="w-7 bg-sky-100 h-1.5 block"></span>
+          <span class="w-7 bg-sky-100 h-1.5 block"></span>
+          <span class="w-7 bg-sky-100 h-1.5 block"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="container px-6 mt-16 relative lg:flex lg:justify-center">
+      <div>
+        <h2 class="sm:text-xl lg:text-2xl">Introduction Website .</h2>
+        <h1 class="text-3xl font-bold pt-10 pb-3 sm:text-5xl lg:text-8xl">
+          Design & Manufacture
+        </h1>
+
+        <p class="pb-7 sm:text-lg lg:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          voluptates neque eveniet fugiat maiores
+        </p>
+
+        <div class="z-10 pt-10 sm:scale-125 sm:ml-16 lg:scale-150 lg:ml28">
+          <a
+            href="#"
+            class="inline-block border-x-2 border-sky-500 bg-sky-500 px-4 py-1 rounded-xl"
+          >
+            Read more
+          </a>
+
+          <a
+            href="#"
+            class="inline-block border-x-2 border-sky-500 px-4 py-1 rounded-xl"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute top-20 -z-30 scale-125 lg:static lg:w-60 lg:scale-100"
+      >
+        <img src="src/img/hero.png" alt="" class="bg-contain" />
+      </div>
+    </div>
+  </body>
+</html>
